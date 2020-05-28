@@ -1,0 +1,151 @@
+nav.navbar.navbar-expand-md.mb-4.fixed-top
+  a.navbar-brand.ml-2(href='#headerfirst') BTWSTUDIO
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarCollapse' aria-controls='navbarCollapse' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarCollapse.collapse.navbar-collapse
+    ul.navbar-nav.ml-auto.mr-3
+      li.nav-item
+        img.ins(src="https://drive.google.com/uc?id=15tvS5CsZaaGlbZaOms5umx9O-kqYwxza", alt="")
+        
+      li.nav-item
+        a.nav-link(href='#sectionIntro')
+          | About
+          span.sr-only (current)
+          
+      li.nav-item
+        a.nav-link(href='#SpanPortugal') Work
+      
+        
+      li.nav-item
+        a.nav-link(href='#sectionContact' tabindex='-1' aria-disabled='true') Contact 
+    
+
+
+header#headerfirst
+  .container 
+      .text_area
+        h1.head View by your own 
+        h4.text We See what we think 
+      a.explore.ex(href='#sectionIntro') Explore 
+        
+section#sectionIntro
+  .container 
+      .row
+        .col-sm-12
+          h1.about About me 
+          hr
+      .row
+        .col-sm-8
+          img.personalpic(src="https://i.imgur.com/wmoWJgB.jpg", 
+          data-0="transform: translateX(-100px)"    data-1000="transform: translateX(0px)")
+             
+        .col-sm-4(data-0="transform: translateX(100px)"                    data-500="transform: translateX(0px)")
+          p This is HsinWei. 2019, I was an exchange student living in Netherlands for 8 months. By time photography was how I connected with people around people and truly giving me unforgettable memories which brought me to establish the website. Here I share what I see what I think through traveling. 
+
+section#sectionSpan
+      .row 
+ 
+        .col-sm-12
+          #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+            
+             li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+             li(data-target='#carouselExampleIndicators' data-slide-to='1')
+             li(data-target='#carouselExampleIndicators' data-slide-to='2')
+             li(data-target='#carouselExampleIndicators' data-slide-to='3')
+             li(data-target='#carouselExampleIndicators' data-slide-to='4')
+             li(data-target='#carouselExampleIndicators' data-slide-to='5')
+            .carousel-inner
+             .carousel-item.active
+                img.d-block.w-100(src='https://i.imgur.com/Z2S9VEw.jpg' alt='First slide')
+             .carousel-item
+                img.d-block.w-100(src='https://i.imgur.com/thSvh18.jpg' alt='First slide')
+             .carousel-item
+                img.d-block.w-100(src='https://i.imgur.com/IcjtY3e.jpg')
+             .carousel-item
+                img.d-block.w-100(src='https://i.imgur.com/7uQwupe.jpg')
+             .carousel-item
+                img.d-block.w-100(src='https://i.imgur.com/WjkJ7TX.jpg')
+             .carousel-item
+                img.d-block.w-100(src='https://i.imgur.com/n7g5EZl.jpg')
+             
+            a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+             span.carousel-control-prev-icon(aria-hidden='true')
+             span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+             span.carousel-control-next-icon(aria-hidden='true')
+             span.sr-only Next 
+             
+section#AboutEurope
+      .row 
+ 
+        .col-sm-12
+          h5  2019年1月，還記得是在過新年之前，正式展開交換學生的生活，隻身前往荷蘭為期7個月的生活體驗，作為一位背包客旅行了10個歐洲國家，體驗了與台灣完全不同的生活，透過沙發衝浪認識了當地居民以及來自世界各地的旅人，透過攝影，我跟路人的行人有了連結，記錄了每一個平凡卻美麗的瞬間。
+section#SpanPortugal
+      .row 
+        .col-sm-12
+          h1 Europe 
+      .row
+        .col-sm-6.SPAN.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg",  data-center-top="transform: translateX(-200px)" data-center= "transform: translateX(0px)")
+          .text_part
+            h1 Spain
+            
+        .col-sm-6.PORTUGAL.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg", data-center-top="transform: translateX(200px)" data-center= "transform: translateX(0px)")
+          .text_part
+            h1 Portugal
+      .row 
+        .col-sm-6.NL.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg",  data-center-top="transform: translateX(-200px)" data-center= "transform: translateX(0px)")
+          .text_part
+            h1 Netherlands
+        .col-sm-6.Czech.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg",   data-center-top="transform: translateX(200px)" data-center= "transform: translateX(0px)")
+          .text_part
+            h1 CzechRepublic 
+      .row 
+        .col-sm-6.Bel.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg", data-center-top="transform: translateX(-200px)" data-center= "transform: translateX(0px)")
+          .text_part
+            h1 Belgium
+        .col-sm-6.Cro.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg",  data-center-top="transform: translateX(200px)" data-center= "transform: translateX(0px)")
+          .text_part
+            h1 Croatia 
+            
+      .row 
+        .col-sm-6.Ger.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg", data-center-top="transform: translateX(-200px)" data-center= "transform: translateX(0px)")
+          .text_part
+            h1 Germany
+        .col-sm-6.Hungary.check
+          img.span(src="https://i.imgur.com/5RIgVbR.jpg")
+          .text_part
+            h1 Hungary   
+      
+
+section#PortraitPhotograph
+  .container
+   
+    .row.one
+      .col-sm-6
+        .Tara
+      .col-sm-6
+        h3.text_head  Winter Fashion 2020
+        p.paragraph Sporty style of jacket represent the fashion trend of 2020, any studuo shooting, please message me 
+        button.btn.btn-outline-primary.float-right.btn-lg.tara Check out 
+    .row.second
+      .col-sm-6
+        h3.text_head  Artsy Fashion 2020
+        p.paragraph Giving the style of something between artsy, classical which create the tone I personally think fit to the model  
+        button.btn.btn-outline-primary.float-left.btn-lg.Eson Check out 
+      .col-sm-6
+        .Athlete
+
+section#End
+  .container 
+    
+  
+  
+

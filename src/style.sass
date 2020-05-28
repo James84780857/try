@@ -1,0 +1,340 @@
+//color Define 
+$color_black: #181A19
+$color_black2: #383639
+$color_skin: #EADDDB 
+$color_grey: #F4F4F4    
+
+//FontChanged 
+*
+  font-family: 'EB Garamond', '微軟正黑體'
+  position: relative
+
+
+
+nav.navbar.navbar-expand-md.mb-4.fixed-top
+  a.navbar-brand.ml-2
+    color: #FFDFD8
+    transition: 0.5s
+    
+    &:hover
+      opacity: 0.5
+    
+ul.navbar-nav.ml-auto.mr-3
+  li.nav-item
+    .ins
+      width: 25px
+      margin: 5px
+      &:hover
+        cursor: pointer
+    a.nav-link
+      color: #FFDFD8
+      transition: 0.5s
+      &:hover
+        opacity: 0.5
+section
+  padding: 20px 0px
+  position: relative
+//Foumulate 
+@mixin size($width, $height)
+  width: $width
+  height: $height 
+@mixin center($d)
+  position: absolute 
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+
+html, body
+  height: 1000px
+  
+.NavMove
+  background-color: rgba(128,128,128,0.5)
+  transition: 0.5s
+#headerfirst,#sectionIntro,#sectionSpan, #sectionSpan,section#AboutEurope, section#SpanPortugal 
+
+
+  
+
+  
+  &:before 
+    content: ""
+    background-color: black 
+    opacity: 0.3
+    width: 100%
+    height: 100%
+    position: absolute 
+  &:after 
+    content: ""
+    background-image: url("https://i.imgur.com/POZWxTx.jpg")
+    background-size: cover 
+    background-attachment: fixed 
+    background-position: center 
+    opacity: 0.8
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    position: absolute
+    z-index: -1  
+  
+  .container 
+    padding: 250px 0px
+    color: white 
+    .explore
+      opacity: 0
+    .ex 
+      opacity: 1
+      position: absolute
+      left: 50%
+      bottom: 5%
+      cursor: pointer
+      color: #F8F1FF
+      transition: 0.3s
+      &:hover 
+        color: $color_skin
+      &:after 
+        content: "∇"
+        display: block 
+        text-align: center 
+        animation: downward 0.5s infinite 
+        cursor: pointer
+      @keyframes downward 
+        0%
+          transform: translateX(0%)
+        100%
+          transform: translateY(10px)
+          
+      
+      
+    .text_area
+      padding-left: 40px
+      .head
+        font-size: 70px
+      .text 
+        font-size: 30px
+       
+        
+#sectionIntro
+    background-color: #383639
+    color: white 
+    .col-sm-8
+       
+    .personalpic
+        width: 100%
+        height: 100%
+        padding-top: 20px
+        margin-right: 80px
+   
+    
+    .col-sm-12
+        .about
+          padding: 10px 10px
+          font-weight: 300
+          
+    .col-sm-4
+          letter-spacing: 4px 
+          margin-top: 20px
+           
+   
+#sectionSpan
+    background-color: #383639
+    #carouselExampleIndicators.carousel.slide
+         
+          margin-top: 200px
+          
+section#AboutEurope
+  background-color: #383639
+  color: white 
+  .col-sm-12 
+    padding: 5px 20px
+   
+    h5
+      letter-spacing: 5px
+      
+section#SpanPortugal
+  background-color: #383639
+  
+  .col-sm-12
+    text-align: center 
+    color: $color_skin
+   
+    padding: 60px 
+  .span
+    width: 100%
+    height: 100%
+  .check
+    transition: 0.5s
+    margin-top: 30px 
+    &:before
+        cursor: pointer
+        content: ""
+        display: block
+        background-color: $color_grey
+        width: 97%
+        height: 100%
+        z-index: 5
+        opacity: 0
+        +center(3)
+        transition: 0.5s
+    .text_part
+      +center(2)
+      color: white 
+      left: -100px
+      opacity: 0
+      cursor: pointer  
+      transition: 0.5s
+      h1
+        font-size: 70px
+    &:hover 
+      &:before
+        opacity: 0.3 
+      .text_part
+        opacity: 1
+        +center(2)
+        
+
+#productPhoto
+  padding: 70px 0px
+  background-color: #383639
+  color: white 
+  .col-sm-12
+    h1
+      text-align: center 
+      color: $color_skin
+      margin-bottom: 50px
+      padding: 10px 20px
+  .col-sm-6
+      cursor: pointer
+      transition: 0.5s 
+      width: 200px
+      border: solid 2px 
+      
+        
+      .text
+        text-align: center 
+        +center(2)
+        
+     
+        
+      
+  .pro1
+    
+    img
+      width: 100%
+      height: 100%    
+      
+      
+      
+
+section#PortraitPhotograph   
+      background-color: #383639
+      color: white 
+      .second 
+        padding: 150px 0px
+      .col-sm-12
+        h1 
+          text-align: center
+          color: $color_skin
+          padding: 60px
+      .col-sm-6
+        .btn.btn-outline-primary.float-right
+          transform: translateX(-30px)
+        
+        .text_head 
+          font-size: 80px
+          padding-bottom: 20px 
+        .Tara 
+          &:before
+            content: " "
+            display: block
+            background-image: url("https://i.imgur.com/5RIgVbR.jpg")
+            background-size: 70%
+            background-repeat: no-repeat 
+            background-position: center center 
+            max-width: 500px
+            height: 500px
+            
+          &:after 
+            
+            content: " "
+            display: block
+            background-image: url("https://i.imgur.com/5RIgVbR.jpg")
+            background-size: 80%
+            background-repeat: no-repeat 
+            background-position: center center 
+            width: 100%
+            height: 150px
+            position: absolute
+            bottom: -50px
+            right: -80px
+            animation: floating 5s infinite 
+            animation-timing-function: ease-in-out
+        .Athlete 
+          &:before
+            content: " "
+            display: block
+            background-image: url("https://i.imgur.com/5RIgVbR.jpg")
+            background-size: 60%
+            background-repeat: no-repeat 
+            background-position: center center 
+            max-width: 500px
+            height: 500px
+            
+          &:after 
+            
+            content: " "
+            display: block
+            
+            background-size: 80%
+            background-repeat: no-repeat 
+            background-position: center center 
+            width: 100%
+            height: 150px
+            position: absolute
+            bottom: -50px
+            right: -80px
+          
+        @keyframes floating 
+            0%
+              transform: translateY(-50px)
+            
+            50%
+              transform: translateY(50px)
+            100%
+              transform: translateY(-50px)
+          
+          
+          
+section#End
+    
+  &:before
+    content: ""
+    display: block
+    width: 100%
+    height: 100%
+    background-color: black
+    position: absolute 
+    opacity: 0.4
+    z-index: 2
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  
+  &:after 
+    content: ""
+    background-image: url("https://i.imgur.com/ND8dI2Z.jpg")
+    background-size: cover 
+    background-attachment: fixed 
+    background-position: center 
+    opacity: 0.8
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    position: absolute
+     
+  
+  .container 
+    padding: 150px 0px
+    color: white 
